@@ -1,0 +1,22 @@
+{% extends 'base_2.html' %}
+
+{% block content %}
+    <h1>{% block title %} Add a New Post {% endblock %}</h1>
+    <form method="post">
+        <label for="username">使用者名稱</label>
+    
+        <br>
+        <input type="text" name="username"
+               placeholder="名稱..."
+               value="{{ request.form['username'] }}"></input>
+        <br>
+
+        <label for="email">您的E-mail</label>
+        <br>
+        <input type="text" name="email"
+                  placeholder="xxx@xxx.com"
+                  value="{{ request.form['email'] }}"></input>
+        <br>
+        <button type="submit">送出</button>
+    </form>
+{% endblock %}

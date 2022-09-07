@@ -1,0 +1,69 @@
+<html>
+
+<body></body>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/first_page.css') }}">
+<header>偵測您的睡眠品質</header>
+<div class="moon"></div>
+<div class="sleep_page">
+
+<div class="sleep_title">睡眠儀表板</div>
+  
+<form action="/homepage.html" method="post" >
+  <div class="user_block">
+
+    <div class="user_name">使用者名稱:</div> <br>
+    <input type="text" id="username" name="username" placeholder="名稱..." value="{{ request.form['username'] }}"/>
+  </div>
+
+  <div class="email_block">
+    <div class="email">您的E-mail :</div>
+    <input type="text" id="email" name="email" placeholder="xxx@xxx.com" value="{{ request.form['email'] }}" />
+  </div>  
+
+  <input  type="submit" value="開始" class="input"></input> 
+  <!--  <button  href="homepage.html" type="submit">送出</button>  -->
+  <!-- <a href="homepage.html" type="submit"  class="start_bt" class="input">開始</a> -->   
+  <!-- <button href="homepage.html"  type="submit" class="start_bt">開始</button>  -->
+  <img class="sleep_icon" src="/static/images/sleep man.png" alt="" />
+
+</form>
+
+</div>
+
+
+<!--
+  <div class="user_block">
+
+    <div class="user_name">使用者名稱:</div>
+    <input id="input_name1" placeholder="名稱..." />
+  </div>
+
+  <div class="email_block">
+    <div class="email">您的E-mail :</div>
+    <input id="input_name2" placeholder="xxx@xxx.com" />
+  </div>  
+   
+  
+  
+  <form method="post">
+        <label for="username">使用者名稱</label>
+    
+        <br>
+        <input type="text" name="username"
+               placeholder="名稱..."
+               value="{{ request.form['username'] }}"></input>
+        <br>
+
+        <label for="email">您的E-mail</label>
+        <br>
+        <input type="text" name="email"
+                  placeholder="xxx@xxx.com"
+                  value="{{ request.form['email'] }}"></input>
+        <br>
+        <button type="submit">送出</button>
+    </form>
+  -->
+
+ 
+
+</html>

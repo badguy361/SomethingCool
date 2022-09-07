@@ -1,0 +1,233 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.menu {
+    margin: auto;
+    width: 1000px;
+    top: 10px;
+    padding: 1%;
+    position: relative;
+    display: flex;
+}
+
+.text {
+    flex: 1;
+    font-size: 130%;
+    line-height: 4rem;
+    text-align: center;
+    color: white;
+    font-family: 微軟正黑體, sans-serif;
+    font-weight: bolder;
+    position: relative;
+    text-decoration: none;
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px #6e706c;
+}
+
+.text:hover {
+    transform: scale(1.2);
+}
+
+hr {
+    width: 60%;
+    text-shadow: 2px 2px 2px #6e706c;
+}
+
+body {
+    background-color: rgb(32, 32, 53);
+    margin-left: -5%;
+    margin-right: -5%;
+}
+
+#welcome {
+    font-size: 220%;
+    margin: auto;
+    margin-bottom: 5%;
+    top: 30px;
+    padding: 5%;
+    bottom: 30%;
+    padding-left: 40%;
+    color: white;
+    font-weight: bold;
+    font-family: 微軟正黑體, sans-serif;
+    position: relative;
+    background-color: rgb(17, 17, 32);
+    text-shadow: 2px 2px 2px #6e706c;
+}
+
+#welcome_text {
+    font-size: 100%;
+    margin-left: -30%;
+    top: 5%;
+    bottom: 30%;
+    color: white;
+    font-weight: bold;
+    font-family: 微軟正黑體, sans-serif;
+    position: relative;
+    text-shadow: 2px 2px 2px #6e706c;
+}
+
+.list {
+    margin: auto;
+    width: 500px;
+    color: white;
+    font-family: 微軟正黑體, sans-serif;
+    font-weight: bolder;
+    position: relative;
+    display: flex;
+}
+
+
+.text2 {
+    flex: 1;
+    font-size: 100%;
+    line-height: 1rem;
+    text-align: center;
+    padding: 3px;
+    color: white;
+    font-family: 微軟正黑體, sans-serif;
+    font-weight: bolder;
+    position: relative;
+    text-decoration: none;
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px #6e706c;
+}
+
+.text2:hover {
+    background-color: rgb(222, 91, 12);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: white;
+    font-family: 微軟正黑體, sans-serif;
+    font-weight: bolder;
+    position: relative;
+}
+
+#firstQ {
+    top: 50px;
+    margin-left: 25%;
+    position: relative;
+}
+
+#firstQbar {
+    width: 47%;
+    top: 50px;
+    padding: 3%;
+    padding-right: 0%;
+    text-align: left;
+    margin-left: 25%;
+    position: relative;
+}
+
+.rightStyle {
+    top: 50px;
+    padding: 1%;
+    text-align: right;
+    margin-left: 30%;
+    position: relative;
+}
+
+#secondQ {
+    width: 45%;
+    top: 50px;
+    text-align: left;
+    margin-left: 25%;
+    position: relative;
+}
+
+#secondQbar {
+    width: 47%;
+    top: 50px;
+    padding: 3%;
+    padding-right: 0%;
+    text-align: left;
+    margin-left: 25%;
+    position: relative;
+}
+
+#thirdQ {
+    width: 50%;
+    top: 50px;
+    padding: 1%;
+    text-align: left;
+    margin-left: 24%;
+    position: relative;
+}
+
+#thirdText {
+    width: 50%;
+    height: 50px;
+    top: 80px;
+    text-align: left;
+    margin-left: 25%;
+    border-radius: 10px;
+    position: relative;
+}
+
+#btSend {
+    width: 5%;
+    top: 150px;
+    text-align: center;
+    margin-left: 70%;
+    position: relative;
+    font-family: 微軟正黑體, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 23%;
+    border-radius: 10px;
+}
+
+#btSend:hover {
+    background-color: #4CAF50;
+    color: white;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/homepage.css') }}" >
+    <title>睡眠儀錶板</title>
+    <div class="menu">
+        <img src=/static/images/nculogo.png width="80" height="70">
+        <a href="homepage.html" class="text">首&nbsp;&nbsp;頁</a>
+        <a href="start.html" class="text">如何開始</a>
+        <a href="sleepClassroom.html" class="text">睡眠小學堂</a>
+        <a href="introduction.html" class="text">專案介紹</a>
+        <a href="problem.html" class="text">常見問題</a>
+        <a href="about.html" class="text">關於我們</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script  src="{{ url_for('static',filename='js/homepage.js') }}"></script>
+</head>
+
+<body>
+    <div id="welcome">
+        <p id="welcome_text">歡迎 {{ data[-1][1] }}</p>
+
+    </div>
+
+    <nav class="list">
+        <a href="homepage.html" class="text2" style="color:rgb(222, 91, 12)">
+            <span>我的睡眠</span>
+        </a>
+        <a href="upload.html" class="text2">
+            <span>提交檔案</span>
+        </a>
+        <a href="feedback.html" class="text2">
+            <span>回饋表單</span>
+        </a>
+    </nav>
+
+    <hr>
+    
+
+    <h1 class="text4" id="toptext">您今晚的睡眠資訊</h1>
+    <h2 class="text4">&#128512;{{sleep_data[-1][4]}}</h2>
+    <p class="text4">您昨晚睡了 {{sleep_data[-1][3][0:1]}}小時 {{sleep_data[-1][3][2:4]}} 分 &emsp;&emsp;&emsp;{{sleep_data[-1][1]}} % 深眠 &emsp;&emsp;&emsp;{{sleep_data[-1][2]}} % 淺眠</p>
+    <img src=/static/images/Sleep_Quality.png  id="predictImg">
+
+
+</body>
+
+</html>

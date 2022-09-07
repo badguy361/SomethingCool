@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/sleepClassroom.css') }}">
+    <title>睡眠儀錶板</title>
+    <div class="menu">
+        <img src=/static/images/nculogo.png width="80" height="70">
+        <a href="homepage.html" class="text">首&nbsp;&nbsp;頁</a>
+        <a href="start.html" class="text">如何開始</a>
+        <a href="sleepClassroom.html" class="text">睡眠小學堂</a>
+        <a href="introduction.html" class="text">專案介紹</a>
+        <a href="problem.html" class="text">常見問題</a>
+        <a href="about.html" class="text">關於我們</a>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static',filename='js/sleepClassroom.js') }}"></script>
+    </div>
+</head>
+
+<body>
+    <div id="welcome">
+        <p id="welcome_text">你真的了解「睡眠」這件事嗎 ?
+    </div>
+
+    <div class="content" style="line-height:150%">
+        深眠淺眠小科普<br><br>
+
+        睡眠可以粗略分成3個階段，首先是REM睡眠，又稱快速動眼期 (Rapid eye movement)，此時身體肌肉沒有產生作用，眼睛閉著，眼球卻開始轉動。做夢主要就產生在快速動眼期，在這個階段醒過來，則容易記得夢境。<br><br>
+
+        再來是淺層睡眠，屬於非快速動眼期，淺眠分成2期，淺眠1期是從清醒到睡著的第一個階段，容易因為周遭聲響醒來，淺眠2期則稍微睡得深一點。<br><br>
+
+        最後是深層睡眠(深度睡眠)，同樣屬於非快速動眼期，深度睡眠也分為2期，深度睡眠1及2期。講夢話，夢遊，或小孩子尿床，都發生在深層睡眠這個階段。<br><br>
+
+        一個睡眠週期為60-90分鐘，正常人第一個睡眠週期會直接跳過快速動眼期，後半段的睡眠則沒有深層睡眠(深度睡眠)。睡眠的前半段深層睡眠(深度睡眠)較多，也就是睡得比較熟，不容易被叫醒，後半段則以淺眠居多，這也是半夜容易翻身，醒來上廁所的原因。<br><br>
+    </div>
+    <img src=/static/images/sleepstage.jpeg width="900" height="600" class="content">
+    <div class="content" style="line-height:150%">
+        自1920年代奧地利精神科醫生貝格爾(HansBerger)發現腦電波測量後，讓醫學界對睡眠有更深的認識，深層睡眠(深度睡眠)因此被發現。深層睡眠(深度睡眠)是整個睡眠中，睡得最深最沉的時候，也被叫做黃金睡眠期、慢波睡眠，只佔睡眠中一小部分(約為25%)，<br><br>
+
+        同時大腦皮層處於休息狀態，所以不會像在淺睡眠周期時出現可能做夢的狀況，對於消除疲勞、恢復精力、免疫抗病都有關鍵的影響，而此時身體也最為放鬆，心跳變慢，呼吸更有規律，血壓以及體溫都會下降，腦電波越來越慢(低於3.5Hz)。<br><br>
+    </div>
+    <img src=/static/images/sleepcycle.png width="900" height="600" class="content">
+    <div class="content" id="last" style="line-height:150%">
+        而不同的年齡層其REM睡眠、淺層睡眠、深層睡眠(深度睡眠)所佔的時間也不同。以一個青壯年的成年人來說，8小時的完整睡眠，淺層睡眠占50~60% (約4小時)， 深層睡眠(深度睡眠)占20~25%<br><br>
+
+        (約2小時)。隨著年紀愈大，腦部中負責製造褪黑激素的松果體漸漸老化，連帶減少深層睡眠(深度睡眠)時間，造成半夜醒來的次數增加。75歲之後，深層睡眠會幾乎消失，只剩下快速動眼期REM睡眠跟淺層睡眠。而根據科學研究，深層睡眠<br><br>
+
+        (深度睡眠)有助於幫助記憶，老年人則因為深度睡眠越來越少，所以記憶力就越來越差。<br><br>
+    </div>
+    <img src=/static/images/AIpiechart.png width="900" height="600" class="content" id="pie">
+
+
+</body>
+
+</html>

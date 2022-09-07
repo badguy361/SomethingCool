@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS feedback;
+
+CREATE TABLE feedback (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    q1 TEXT NOT NULL,
+    q2 TEXT NOT NULL,
+    opinion TEXT NOT NULL
+);

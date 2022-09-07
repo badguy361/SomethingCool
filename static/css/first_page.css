@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@keyframes moonmove {
+  0% {
+    box-shadow: 15px -15px #FFD633;
+    transform: translateX(-15px) translateY(15px);
+  }
+  50% {
+    box-shadow: -30px 30px #FFD633;
+    transform: translateX(30px) translateY(-30px);
+  }
+  100% {
+    box-shadow: 15px -15px #FFD633;
+    transform: translateX(-15px) translateY(15px);
+  }
+}
+* {
+  position: relative;
+  font-family: "Hind Vadodara", sans-serif, "微軟正黑體";
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+html,
+body {
+  border: solid 1px #111120;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #111120;
+}
+
+header {
+  margin-top: 3%;
+  font-size: 50;
+}
+
+header,
+.sleep_page {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.sleep_title,
+header {
+  text-align: center;
+}
+
+.user_name,
+.email {
+  display: inline-block;
+}
+
+.sleep_page {
+  margin-top: 20px;
+  background-color: #202035;
+  border: solid 1px #ffffff;
+  border-radius: 10px;
+}
+.sleep_page .sleep_title {
+  margin-top: 20px;
+  font-size: 40;
+}
+.sleep_page .user_block .user_name {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25;
+  margin-left: 25%;
+}
+.sleep_page .user_block input {
+  bottom: 5px;
+  margin-left: 10%;
+  height: 35px;
+}
+.sleep_page .email_block .email {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25;
+  margin-left: 25%;
+}
+.sleep_page .email_block input {
+  bottom: 5px;
+  margin-left: 120px;
+  padding-right: 60px;
+  height: 35px;
+}
+.sleep_page .start_bt {
+  cursor: pointer;
+  border: solid 1px #ffffff;
+  top: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 2%;
+  margin-left: 45%;
+  font-size: 20px;
+  background-color: #de5b0c;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.sleep_page .start_bt:hover {
+  background-color: #FC7F03;
+}
+.sleep_page .sleep_icon {
+  width: 30%;
+  margin-left: 60%;
+  margin-bottom: 5%;
+}
+
+.moon {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  box-shadow: 15px -15px;
+  right: 25%;
+  top: 4%;
+  animation: moonmove 20s infinite;
+}
+
+#input_name1{
+  width: 30%;
+  color:#000000;
+  margin-left: 10%;
+}
+
+#input_name2{
+  width: 30%;
+  color:#000000;
+  margin-left: 10%;
+}
+

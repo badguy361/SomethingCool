@@ -1,0 +1,28 @@
+<html>
+
+<body></body>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/first_page.css') }}">
+<header>偵測您的睡眠品質</header>
+<div class="moon"></div>
+<div class="sleep_page">
+  <div class="sleep_title">睡眠儀表板</div>
+
+  <form action="/signin_create" method="post" enctype=multipart/form-data>
+    <div class="user_block">
+      <div class="user_name">使用者名稱:</div>
+      <input type="text" name="username" id="input_name1" placeholder="名稱..." />
+    </div>
+
+    <div class="email_block">
+      <div class="email">您的E-mail :</div>
+      <input type="eamil" name="email" id="input_name2" placeholder="xxx@xxx.com" />
+    </div>
+    
+    <input type="submit" value="送出" class="start_bt"></input>
+  </form>
+  
+
+  <img class="sleep_icon" src="/static/images/sleep man.png" alt="" />
+</div>
+
+</html>

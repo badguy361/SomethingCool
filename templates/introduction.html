@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/introduction.css') }}">
+    <title>睡眠儀錶板</title>
+    <div class="menu">
+        <img src=/static/images/nculogo.png width="80" height="70">
+        <a href="homepage.html" class="text">首&nbsp;&nbsp;頁</a>
+        <a href="start.html" class="text">如何開始</a>
+        <a href="sleepClassroom.html" class="text">睡眠小學堂</a>
+        <a href="introduction.html" class="text">專案介紹</a>
+        <a href="problem.html" class="text">常見問題</a>
+        <a href="about.html" class="text">關於我們</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static',filename='js/introduction.js') }}"></script>
+</head>
+
+<body>
+    <div id="welcome">
+        <p id="welcome_text">一起來看看我們的作品理念吧~ </p>
+    </div>
+    <div class="content" style="line-height:150%">
+        我們是中央大學的跨領域AI資料庫開發團隊，由組長張智宇及成員謝舒雲、張杰宸、王誌延、侯皓為五人組成，橫跨地科系、大氣系以及文學院，共同開發「基於穿戴裝置的AI睡眠儀表板」。<br><br>
+
+        此專案之發想理念為鑑於疫情時代下，固有生活模式及環境皆產生變化，台灣民眾的失眠問題隨之加劇，因此期望透過穿戴裝置擷取使用者心率資料，以後端AI模型分析技術輸出睡眠報告，並藉由我們建置的網站睡眠儀錶板將上傳之睡眠分析做視覺化處理，使資訊傳達較為清楚，此外透過開源網站亦可將本專案之成果推廣到網路上，免費開放給民眾透過第三方網站了解自身的睡眠品質，除了讓使用者了解自身睡眠狀況並加以調整，也藉此改善台灣民眾失眠嚴重之問題。<br><br>
+
+        我們始終秉持著服務社會的精神，尤其注重聯合國永續發展目標的實踐，期望利用穿戴裝置結合AI睡眠儀表板提升在睡眠健康領域所貢獻的社會價值，發揮團隊最大的正面影響力。<br><br>
+
+        本專案連結以下三項SDG指標:<br><br>
+
+        SDG3 健康與福祉 SDG9 產業、創新和基礎設施 SDG10 減少不平等<br><br>
+        <div class="figdiv">
+            <img src=/static/images/sdg3.png width="300" height="300" class="figure">
+            <img src=/static/images/sdg9.png width="300" height="300" class="figure">
+            <img src=/static/images/sdg10.jpeg width="300" height="300" class="figure">
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

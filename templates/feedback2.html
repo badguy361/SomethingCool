@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/feedback.css') }}">
+    <title>睡眠儀錶板</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static',filename='js/feedback.js') }}"></script>
+    <div class="menu">
+        <img src=/static/images/nculogo.png width="80" height="70">
+        <a href="homepage.html" class="text">首&nbsp;&nbsp;頁</a>
+        <a href="start.html" class="text">如何開始</a>
+        <a href="sleepClassroom.html" class="text">睡眠小學堂</a>
+        <a href="introduction.html" class="text">專案介紹</a>
+        <a href="problem.html" class="text">常見問題</a>
+        <a href="about.html" class="text">關於我們</a>
+    </div>
+</head>
+
+<body>
+    <div id="welcome">
+        <p id="welcome_text">歡迎 {{ data[-1][1] }}</p>
+    </div>
+
+    <nav class="list">
+        <a href="homepage.html" class="text2">
+            <span>我的睡眠</span>
+        </a>
+        <a href="upload.html" class="text2">
+            <span>提交檔案</span>
+        </a>
+        <a href="feedback.html" class="text2" style="color:rgb(222, 91, 12)">
+            <span>回饋表單</span>
+        </a>
+    </nav>
+
+    <hr>
+
+    <div class="container">
+
+        <form action="/signin_create2" method="post" enctype=multipart/form-data>
+            
+            <div class="q1_block">
+              <div class="q1" id='firstQ'>Q1 您認為今晚睡眠分數如何呢 ?</div> <br> <!--br用來換行-->
+                
+              <input type="text" name="q1" id='firstQbar' placeholder="1~100分" /> 
+              <br>
+              <br>
+              <br>
+            </div>
+        
+            <div class="q2_block">
+              <div class="q2" id='secondQ'>Q2 您認為使用起來體驗如何呢 ?</div><br>
+              <input type="text" name="q2" id='secondQbar' placeholder="1~100分" /> 
+              <br>
+              <br>
+            </div>
+
+            <div class="opinion_block">
+                <div class="opinion" id='thirdQ'>Q3 您有甚麼話想對我們說呢 ?</div>
+                <!-- <input type="text" name="opinion" id="input_name3" placeholder="1~100分" /> -->
+                <input type="text" name="opinion" id='secondQbar' placeholder="提供您的使用建議~" />
+
+    <button type='submit' name="button" id="btSend" onclick="talk()">送出</button>
+    </form>
+
+    </div>
+
+
+</body>
+
+</html>
